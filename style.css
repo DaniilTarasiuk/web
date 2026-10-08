@@ -1,0 +1,105 @@
+/* ---------- Page basics ---------- */
+
+body {
+  /* Font used for the whole page (falls back to the next one if unavailable) */
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;            /* Space between lines for easier reading */
+  color: #333333;              /* Dark grey text */
+  max-width: 800px;            /* Limits the width of the content */
+  margin: 0 auto;              /* "auto" on the sides centres the content */
+  padding: 0 20px;             /* Small space at the edges on narrow screens */
+  background-color: #faf7f2;   /* Soft cream background */
+}
+
+/* ---------- Headings ---------- */
+
+h1,
+h2,
+h3 {
+  /* One brown colour for all headings */
+  color: #8b4513;
+}
+
+h1 {
+  text-align: center;          /* Centres the main title */
+}
+
+h2 {
+  border-bottom: 2px solid #d9c7b0;  /* Thin line under each section heading */
+  padding-bottom: 4px;
+}
+
+/* ---------- Menu (navigation) ---------- */
+
+nav ul {
+  list-style: none;            /* Removes the bullet points */
+  margin: 0;
+  padding: 0;
+  display: flex;               /* Puts the menu items side by side */
+  justify-content: center;     /* Centres the items horizontally */
+  gap: 20px;                   /* Space between the items */
+}
+
+nav a {
+  text-decoration: none;       /* Removes the underline from menu links */
+  color: #8b4513;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;  /* Underline appears when the mouse is over a link */
+}
+
+/* ---------- Content ---------- */
+
+section {
+  margin-bottom: 30px;         /* Space below each section */
+}
+
+/* Makes the anchor jump land slightly lower, so the heading is not stuck to the edge */
+section {
+  scroll-margin-top: 20px;
+}
+
+a {
+  color: #0b5394;              /* Blue colour for normal links in the text */
+}
+
+/* ---------- Image ---------- */
+
+img {
+  max-width: 100%;             /* The image can never be wider than the page */
+  height: auto;                /* Keeps the correct proportions */
+  display: block;              /* Lets the image sit on its own line... */
+  margin: 20px auto;           /* ...and be centred */
+}
+
+/* ---------- Table ---------- */
+
+table {
+  border-collapse: collapse;   /* Merges double borders into a single line */
+  width: 100%;                 /* Table fills the content width */
+  margin: 20px 0;
+}
+
+th,
+td {
+  border: 1px solid #999999;   /* Visible border around every cell */
+  padding: 8px 12px;           /* Space inside cells */
+  text-align: left;
+}
+
+th {
+  background-color: #e8d9c4;   /* Light brown background for the header row */
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+  border-top: 1px solid #d9c7b0;  /* Thin line above the footer */
+  margin-top: 40px;
+  padding: 10px 0;
+  text-align: center;
+  font-size: 0.9em;               /* Slightly smaller text */
+  color: #777777;
+}

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<!-- Tells the browser this is an HTML5 document -->
+<html lang="en">
+<!-- <html> is the root element; lang="en" says the page text is in English -->
+<head>
+  <!-- <head> holds information about the page that is not shown directly -->
+  <meta charset="UTF-8">
+  <!-- UTF-8 encoding so special characters display correctly -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Makes the page scale properly on phones -->
+  <title>All About Owls</title>
+  <!-- The title shown in the browser tab -->
+  <link rel="stylesheet" href="style.css">
+  <!-- Connects the separate CSS file that styles this page -->
+</head>
+<body>
+  <!-- <body> contains everything visible on the page -->
+
+  <header>
+    <!-- <header> is the top part of the page: title and menu -->
+    <h1>All About Owls</h1>
+    <!-- h1 is the main heading; use it only once per page -->
+
+    <nav>
+      <!-- <nav> marks a block of navigation links -->
+      <ul>
+        <!-- The menu is a list of links; CSS puts the items side by side -->
+        <li><a href="#intro">Introduction</a></li>
+        <!-- href="#intro" jumps to the element with id="intro" on this page -->
+        <li><a href="#habits">Habits</a></li>
+        <li><a href="#species">Species</a></li>
+        <li><a href="#more">Learn more</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- <main> holds the main content of the page -->
+
+    <section id="intro">
+      <!-- <section> groups related content; the id is the target of the menu anchor -->
+      <h2>Introduction</h2>
+      <!-- h2 is a sub-heading of the page -->
+      <p>
+        Owls are birds of prey that belong to the order <strong>Strigiformes</strong>.
+        <!-- <strong> marks very important text (usually shown bold) -->
+        There are more than 200 species, living on every continent except Antarctica.
+      </p>
+      <p>
+        They are famous for their large forward-facing eyes, silent flight and
+        <em>remarkable</em> hearing.
+        <!-- <em> marks emphasised text (usually shown in italics) -->
+        Because of these features, owls have appeared in myths and stories for centuries.
+      </p>
+
+      <img src="obrazok.jpg" alt="An owl sitting on a branch">
+      <!-- <img> shows a picture; src is the file, alt is the text for screen readers
+           or when the image cannot load -->
+    </section>
+
+    <section id="habits">
+      <h2>Habits</h2>
+      <p>
+        Most owls are <strong>nocturnal</strong>, which means they hunt at night.
+        During the day they rest in trees, barns or old buildings, where their
+        feathers help them blend in.
+      </p>
+      <p>
+        An owl can turn its head up to about <em>270 degrees</em>, because it
+        cannot move its eyes in their sockets. Special soft feathers let it fly
+        almost without a sound.
+      </p>
+
+      <h3>What owls eat</h3>
+      <!-- h3 is a smaller heading inside the h2 section -->
+      <ul>
+        <!-- <ul> is an unordered (bulleted) list -->
+        <li>Mice and voles</li>
+        <!-- each <li> is one list item -->
+        <li>Small birds</li>
+        <li>Insects</li>
+        <li>Frogs and fish (for some species)</li>
+      </ul>
+
+      <h3>A typical owl night</h3>
+      <ol>
+        <!-- <ol> is an ordered (numbered) list -->
+        <li>Wake up at dusk.</li>
+        <li>Listen and look for prey.</li>
+        <li>Swoop down and catch it.</li>
+        <li>Return to the nest or roost before dawn.</li>
+      </ol>
+    </section>
+
+    <section id="species">
+      <h2>Species</h2>
+      <p>
+        Owls come in many shapes and sizes, from tiny birds that fit in your
+        hand to giants with a wingspan of well over a metre.
+      </p>
+      <p>
+        The table below compares a few well-known species. The figures are
+        <em>approximate</em>.
+      </p>
+
+      <table>
+        <!-- <table> creates a data table -->
+        <thead>
+          <!-- <thead> is the header part of the table -->
+          <tr>
+            <!-- <tr> is one table row -->
+            <th>Species</th>
+            <!-- <th> is a header cell (bold and centred by default) -->
+            <th>Length (cm)</th>
+            <th>Habitat</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- <tbody> holds the normal data rows -->
+          <tr>
+            <td>Barn owl</td>
+            <!-- <td> is a normal data cell -->
+            <td>33–39</td>
+            <td>Farmland, barns</td>
+          </tr>
+          <tr>
+            <td>Tawny owl</td>
+            <td>37–46</td>
+            <td>Woodland</td>
+          </tr>
+          <tr>
+            <td>Eurasian eagle-owl</td>
+            <td>58–75</td>
+            <td>Rocky areas, forests</td>
+          </tr>
+          <tr>
+            <td>Snowy owl</td>
+            <td>52–71</td>
+            <td>Arctic tundra</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section id="more">
+      <h2>Learn more</h2>
+      <p>
+        If you would like to read further, there is a detailed article about owls on
+        <a href="https://en.wikipedia.org/wiki/Owl" target="_blank" rel="noopener noreferrer">Wikipedia</a>.
+        <!-- <a> creates a link; target="_blank" opens it in a new tab;
+             rel="noopener noreferrer" is a safety measure for links opened in new tabs -->
+      </p>
+      <p>
+        Owls are <strong>protected</strong> in many countries, so please watch them
+        from a distance and never disturb their nests.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <!-- <footer> is the bottom part of the page -->
+    <p>&copy; 2026 Your Name</p>
+    <!-- &copy; shows the © symbol; replace "Your Name" with your real name -->
+  </footer>
+
+</body>
+</html>
